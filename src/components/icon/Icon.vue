@@ -1,5 +1,5 @@
 <template>
-    <span class="icon" :class="[newType, size]">
+    <span class="bulma-icon" :class="[newType, size]">
         <i
             v-if="!useIconComponent"
             :class="[newPack, newIcon, newCustomSize, customClass]"/>

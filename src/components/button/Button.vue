@@ -1,19 +1,19 @@
 <template>
     <component
         :is="computedTag"
-        class="button"
+        class="bulma-button"
         v-bind="$attrs"
         :type="nativeType"
         :class="[size, type, {
-            'is-rounded': rounded,
-            'is-loading': loading,
-            'is-outlined': outlined,
-            'is-fullwidth': expanded,
-            'is-inverted': inverted,
-            'is-focused': focused,
-            'is-active': active,
-            'is-hovered': hovered,
-            'is-selected': selected
+            'bulma-is-rounded': rounded,
+            'bulma-is-loading': loading,
+            'bulma-is-outlined': outlined,
+            'bulma-is-fullwidth': expanded,
+            'bulma-is-inverted': inverted,
+            'bulma-is-focused': focused,
+            'bulma-is-active': active,
+            'bulma-is-hovered': hovered,
+            'bulma-is-selected': selected
         }]"
         v-on="$listeners"
     >
@@ -94,10 +94,10 @@ export default {
             return this.tag
         },
         iconSize() {
-            if (!this.size || this.size === 'is-medium') {
-                return 'is-small'
-            } else if (this.size === 'is-large') {
-                return 'is-medium'
+            if (!this.size || this.size === 'bulma-is-medium') {
+                return 'bulma-is-small'
+            } else if (this.size === 'bulma-is-large') {
+                return 'bulma-is-medium'
             }
             return this.size
         }

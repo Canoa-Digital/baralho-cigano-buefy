@@ -16,11 +16,11 @@ export default {
         },
         position: {
             type: String,
-            default: 'is-top',
+            default: 'bulma-is-top',
             validator(value) {
                 return [
-                    'is-top',
-                    'is-bottom'
+                    'bulma-is-top',
+                    'bulma-is-bottom'
                 ].indexOf(value) > -1
             }
         }
@@ -47,14 +47,14 @@ export default {
     },
     render(createElement) {
         const trigger = createElement('div', {
-            staticClass: 'collapse-trigger', on: { click: this.toggle }
+            staticClass: 'bulma-collapse-trigger', on: { click: this.toggle }
         }, this.$scopedSlots.trigger
             ? [this.$scopedSlots.trigger({ open: this.isOpen })]
             : [this.$slots.trigger]
         )
         const content = createElement('transition', { props: { name: this.animation } }, [
             createElement('div', {
-                staticClass: 'collapse-content',
+                staticClass: 'bulma-collapse-content',
                 attrs: { 'id': this.ariaId, 'aria-expanded': this.isOpen },
                 directives: [{
                     name: 'show',
@@ -62,8 +62,8 @@ export default {
                 }]
             }, this.$slots.default)
         ])
-        return createElement('div', { staticClass: 'collapse' },
-            this.position === 'is-top' ? [trigger, content] : [content, trigger])
+        return createElement('div', { staticClass: 'bulma-collapse' },
+            this.position === 'bulma-is-top' ? [trigger, content] : [content, trigger])
     }
 }
 </script>
