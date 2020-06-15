@@ -8,16 +8,16 @@
         <div
             v-if="!destroyed"
             v-show="isActive"
-            class="modal is-active"
-            :class="[{'is-full-screen': fullScreen}, customClass]"
+            class="bulma-modal bulma-is-active"
+            :class="[{'bulma-is-full-screen': fullScreen}, customClass]"
             v-trap-focus="trapFocus"
             tabindex="-1"
             :role="ariaRole"
             :aria-modal="ariaModal">
-            <div class="modal-background" @click="cancel('outside')"/>
+            <div class="bulma-modal-background" @click="cancel('outside')"/>
             <div
-                class="animation-content"
-                :class="{ 'modal-content': !hasModalCard }"
+                class="bulma-animation-content"
+                :class="{ 'bulma-modal-content': !hasModalCard }"
                 :style="customStyle">
                 <component
                     v-if="component"
@@ -33,7 +33,7 @@
                     type="button"
                     v-if="showX"
                     v-show="!animating"
-                    class="modal-close is-large"
+                    class="bulma-modal-close bulma-is-large"
                     @click="cancel('x')"/>
             </div>
         </div>
@@ -162,9 +162,9 @@ export default {
 
             if (this.scroll === 'clip') {
                 if (this.isActive) {
-                    document.documentElement.classList.add('is-clipped')
+                    document.documentElement.classList.add('bulma-is-clipped')
                 } else {
-                    document.documentElement.classList.remove('is-clipped')
+                    document.documentElement.classList.remove('bulma-is-clipped')
                 }
                 return
             }
@@ -174,9 +174,9 @@ export default {
                 : this.savedScrollTop
 
             if (this.isActive) {
-                document.body.classList.add('is-noscroll')
+                document.body.classList.add('bulma-is-noscroll')
             } else {
-                document.body.classList.remove('is-noscroll')
+                document.body.classList.remove('bulma-is-noscroll')
             }
 
             if (this.isActive) {
@@ -266,11 +266,11 @@ export default {
         if (typeof window !== 'undefined') {
             document.removeEventListener('keyup', this.keyPress)
             // reset scroll
-            document.documentElement.classList.remove('is-clipped')
+            document.documentElement.classList.remove('bulma-is-clipped')
             const savedScrollTop = !this.savedScrollTop
                 ? document.documentElement.scrollTop
                 : this.savedScrollTop
-            document.body.classList.remove('is-noscroll')
+            document.body.classList.remove('bulma-is-noscroll')
             document.documentElement.scrollTop = savedScrollTop
             document.body.style.top = null
         }
