@@ -4,9 +4,9 @@ import { merge } from '../utils/helpers'
 const mdiIcons = {
     sizes: {
         'default': 'mdi-24px',
-        'is-small': null,
-        'is-medium': 'mdi-36px',
-        'is-large': 'mdi-48px'
+        'bulma-is-small': null,
+        'bulma-is-medium': 'mdi-36px',
+        'bulma-is-large': 'mdi-48px'
     },
     iconPrefix: 'mdi-'
 }
@@ -16,9 +16,9 @@ const faIcons = () => {
     return {
         sizes: {
             'default': faIconPrefix + 'lg',
-            'is-small': null,
-            'is-medium': faIconPrefix + '2x',
-            'is-large': faIconPrefix + '3x'
+            'bulma-is-small': null,
+            'bulma-is-medium': faIconPrefix + '2x',
+            'bulma-is-large': faIconPrefix + '3x'
         },
         iconPrefix: faIconPrefix,
         internalIcons: {

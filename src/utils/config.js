@@ -12,7 +12,7 @@ let config = {
     defaultToastPosition: null,
     defaultNotificationDuration: 2000,
     defaultNotificationPosition: null,
-    defaultTooltipType: 'is-primary',
+    defaultTooltipType: 'bulma-is-primary',
     defaultTooltipAnimated: false,
     defaultTooltipDelay: 0,
     defaultInputAutocomplete: 'on',
