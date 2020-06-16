@@ -68,7 +68,7 @@ export default {
             if (splitType.length <= 1) return
 
             const [, ...type] = splitType
-            return `has-text-${type.join('-')}`
+            return `bulma-has-text-${type.join('-')}`
         },
         newCustomSize() {
             return this.customSize || this.customSizeByPack
