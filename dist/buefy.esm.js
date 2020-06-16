@@ -575,7 +575,7 @@ var script = {
           _splitType2 = _toArray(_splitType),
           type = _splitType2.slice(1);
 
-      return "has-text-".concat(type.join('-'));
+      return "bulma-has-text-".concat(type.join('-'));
     },
     newCustomSize: function newCustomSize() {
       return this.customSize || this.customSizeByPack;
