@@ -1,7 +1,7 @@
 import { _ as _defineProperty } from './chunk-1fafdf15.js';
 import { removeElement, merge } from './helpers.js';
 import { c as config, V as VueInstance } from './chunk-00b31897.js';
-import { I as Icon } from './chunk-2b455134.js';
+import { I as Icon } from './chunk-c393c291.js';
 import { _ as __vue_normalize__, r as registerComponent, a as registerComponentProgrammatic, u as use } from './chunk-cca88db8.js';
 import { t as trapFocus } from './chunk-42f463e6.js';
 import { M as Modal } from './chunk-0ca063d1.js';

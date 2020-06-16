@@ -1,7 +1,7 @@
 import { _ as _defineProperty } from './chunk-1fafdf15.js';
 import './helpers.js';
 import { c as config } from './chunk-00b31897.js';
-import { I as Icon } from './chunk-2b455134.js';
+import { I as Icon } from './chunk-c393c291.js';
 import { _ as __vue_normalize__, r as registerComponent, u as use } from './chunk-cca88db8.js';
 
 var script = {
